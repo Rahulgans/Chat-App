@@ -1,0 +1,48 @@
+
+	
+	<nav style="background-color: #706765;">
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo left">Let'sChat</a>
+	      <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+	      <ul id="nav-mobile" class="right hide-on-sm-and-down">
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#"></a></li>
+	        <li><button class="btn waves-effect" ng-click="homeCtrl.logout()">Logout</button></li>
+	      </ul>
+
+	      <!-- <ul id="mobile-demo" class="side-nav">
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#"></a></li>
+	        <li><a href='#'>JavaScript</a></li>
+	      </ul> -->
+	    </div>
+ 	</nav>
+
+	<div class="row" id="chatContainer">
+
+		<div class="col s12">
+			<h4> Hi,{{  homeCtrl.userName }}</h4> 
+		</div>
+
+		<div class="col s12" ng-show="homeCtrl.usersList">
+			<!-- <li ng-repeat = "user in "></li> -->
+			
+		</div>
+
+        <div class="col s12" id="chatDiv" style="margin-top: 3em;padding: 1em;border: 1px solid green;border-radius: 1em; min-height: 20em;">  
+		   <div>
+		   		
+		   		<message-div id="chatBox"></message-div>
+  
+        	</div>
+        </div>
+      		
+        <div class="col s12" style="margin-top: 2em;">
+          		<textarea id="textarea1" rows="30" cols="40" placeholder="Message here..."></textarea>
+         		<button class="waves-effect btn sendBtn">Submit<i class="material-icons right">send</i></button>
+        		
+      	</div>
+    	
+	</div>
+
+<!-- 	<insert-script ng-if = "homeCtrl.showScript"></insert-script> -->

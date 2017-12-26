@@ -1,0 +1,28 @@
+{
+  "name": "letsChat",
+  "version": "1.0.0",
+  "description": " come,lets chat",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "latest",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "nodemailer": "^4.4.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "socket.io": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ganapathy <contact@tparurahul17@gmail.com>",
+  "license": "ISC"
+}

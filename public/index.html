@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head ng-app="chatApp">
+
+    <meta charset='utf-8'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Let's Chat</title>
+
+                        <!-- load Materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> 
+                        <!-- Font awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <style>
+        body { padding-top:80px; }
+    </style>
+</head>
+<body ng-controller = "LoginController as loginCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <h3 class="center-align"><span><i class="fa fa-lock"></i></span> Let's Chat</h3>
+                <div style="display: flex;justify-content: space-evenly;margin-top: 2rem;">
+                    <a class="waves-effect waves-light btn" ng-href="#/_api/login">Login</a>
+                    <a href="auth/google/get" class="waves-effect waves-light btn social google">
+                        <span ><i class="fa fa-google"></i>
+                        </span>Login
+                    </a>
+                    <a class="waves-effect waves-light btn" ng-href="#/_api/signup">Signup</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container" ng-view>
+
+    </div>
+
+        <footer>
+            <div style="display: flex;justify-content: space-around;">   
+                <a href="https://github.com/Rahulgans" target="blank">
+                    <span><i class="fa fa-github fa-2x"></i>
+                    </span>
+                </a> 
+                <h5 style="margin: 1rem;" class="text-muted">
+                <i>&#169;Ganapathy</i>
+                </h5>
+                <a href="https://www.linkedin.com/in/ganapathy-subramanian-440111142/" target="blank">
+                    <span><i class="fa fa-linkedin fa-2x"></i></span>
+                </a>
+            </div>
+        </footer> 
+<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+
+
+    <script type="text/javascript" src="angular/app.js"></script>
+
+    <script type="text/javascript" src="angular/controllers/login-controller.js"></script>
+     <script type="text/javascript" src="angular/controllers/signup-controller.js"></script>
+
+    <script type="text/javascript" src="angular/routes.js"></script>
+
+
+
+</body>
+</html>

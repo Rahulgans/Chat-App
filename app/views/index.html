@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="chatApp">
+<head lang='en'>
+
+    <meta charset='utf-8'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Let's Chat</title>
+
+                        <!-- load Materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> 
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+                        <!-- Font awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        body { padding-top:80px; }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="min-height: 75vh;" ng-view>
+        <!-- // views go here -->
+
+    </div>
+
+
+        <footer>
+            <div style="display: flex;justify-content: space-around;">   
+                <a href="https://github.com/Rahulgans" target="blank">
+                    <span><i class="fa fa-github fa-2x"></i>
+                    </span>
+                </a> 
+                <h5 style="margin: 1rem;" class="text-muted">
+                <i>&#169;Ganapathy</i>
+                </h5>
+                <a href="https://www.linkedin.com/in/ganapathy-subramanian-440111142/" target="blank">
+                    <span><i class="fa fa-linkedin fa-2x"></i></span>
+                </a>
+            </div>
+        </footer> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.min.js"></script>
+
+        <!-- client configurations for using socket.io -->
+    <script src="js/socket.io.js"></script>
+
+   <!--  <script type="text/javascript">
+        let socket = io.connect('http://localhost:3000');
+    </script> -->
+ 
+                  <!-- Angular scripts -->
+    <script type="text/javascript" src="angular/app.js"></script>
+    <script type="text/javascript" src="angular/services/service.js"></script>
+    <script type="text/javascript" src="angular/directives/directive.js"></script>
+
+
+
+    <script type="text/javascript" src="angular/controllers/login-controller.js"></script>
+    <script type="text/javascript" src="angular/controllers/signup-controller.js"></script>
+    <script type="text/javascript" src="angular/controllers/home-controller.js"></script>
+    <script type="text/javascript" src="angular/controllers/forgot-controller.js"></script>
+
+
+    <script type="text/javascript" src="angular/routes.js"></script>
+
+
+
+</body>
+</html>
